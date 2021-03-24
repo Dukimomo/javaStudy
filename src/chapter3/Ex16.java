@@ -1,23 +1,41 @@
 package chapter3;
 
+import java.util.Scanner;
+
 public class Ex16 {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
-		double pi = 3.141592;
+		String number = "0123456789";
+		System.out.println(number.length());
+		for(int i=0; i<number.length(); i++) {
+			System.out.println(number.charAt(i));
+		}
 		
-		// 소수점 3째 자리까지 출력
-	    double pi_1 = (int) (pi * 1000) / 1000.0;
-	    System.out.println(pi_1);
+		String a = "aiguhaioudsikunrfikgjsoigjiojaoijgo;asejgojio";
+		System.out.println(a.length());
+		// for문을 사용해서 a 객체에 들어있는 문자열에
+		// 처음부터 끝까지 접근해서 출력하세요.
+		for(int i=0; i<a.length(); i++) {
+			char monja = a.charAt(i);
+			
+			if(monja == 'a') {
+				System.out.println(monja);
+			}
+		}
 		
-		// 소수점 3째 자리에서 반올림 후 출력
-	    double pi_2 = pi * 100;
-	    System.out.println(pi_2);
-	    
-	    double pi_3 = (pi * 100) + 0.5;
-	    System.out.println(pi_3);
-	    
-	    int pi_4 = 
+		Scanner scanf = new Scanner(System.in);
+		
+		System.out.println("문자열 입력 : ");
+		String input = scanf.nextLine();
+		
+		for(int i=0; i<input.length(); i++) {
+			// input 문자열 내 공백문자를 제거하고 출력하는 코드
+			char monja = input.charAt(i);
+			
+			if(monja != ' ') {
+				System.out.print(monja);
+			}
+		}
 	}
 
 }

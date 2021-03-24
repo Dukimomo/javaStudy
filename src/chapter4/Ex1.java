@@ -8,7 +8,7 @@ public class Ex1 {
 			sum += i;
 		}
 		
-		System.out.println(sum);
+		System.out.println(sum); 
 	}
 
 }
