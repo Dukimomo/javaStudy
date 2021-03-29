@@ -1,11 +1,14 @@
 package Chapter13;
 
 public interface 인터페이스명 {
-	// 클래스 성수 멤버 변수와
 	public static final int memVal1 = 10;
+	public static final int memVal2 = 20;
+	public static final int memVal3 = 30;
+	public static final int memVal4 = 40;
 	
-	// 추성 메서드
 	public abstract void memMethod1();
 	
-	// 만 가질 수 있음
+	abstract void memMethod2();
+	
+	void memMethod3(); 
 }
